@@ -1,0 +1,86 @@
+/*======================<_header>==================*/
+
+.technology {
+  background-color: #eeeeef;
+  z-index: 1;
+}
+
+
+.technology__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  margin-bottom: 48px;
+
+}
+
+.technology__picture {
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 272px;
+
+}
+
+.advantage__item {
+  width: auto;
+  align-self: center;
+}
+
+.advantages__icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 38px;  
+  align-content: space-between;
+  margin-bottom: 48px;
+
+}
+
+
+
+.advantage__icon {
+  margin-bottom: 28px;
+  text-align: center;
+  width: 192px;  
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+  
+  
+.advantage__icon {
+  margin-bottom: 16px;
+  }
+  
+  .technology__wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 38px;  
+  }
+  
+  .advantages__icons {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 38px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 580px) {
+  .advantages__icons {
+    grid-template-columns: 1fr;
+  }
+  
+  .advantage__icon {
+  width: 220px;
+  }
+  
+}
+
+/*======================<_header_end>==================*/
