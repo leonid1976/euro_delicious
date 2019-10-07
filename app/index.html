@@ -61,22 +61,49 @@
 </head>
 <body class="main-page">
 
-  //= template/_header.html
-  //= template/_shop.html
-  //= template/_sidebar_shop.html
-  //= template/_menu.html
-  //= template/_sidebar_menu.html
-  //= template/_footer.html
+//= template/_header.html
+  
+  <section id="storefront" class="storefront">
+    <div class="container">
+      <div class="storefront__wrap">
+      
+//= template/_shop-sidebar.html
+//= template/_shop-content.html
+
+
+      </div> <!--storefornt__wrap-->
+    </div> <!-- container end-->
+  </section>
+  
+  <section class="menufront">
+    <div class="container">
+      <div class="menu__wrap">
+
+//= template/_menu-sidebar.html
+//= template/_menu-content.html
+
+      </div>  <!--menu__wrap-->
+    </div>  <!-- container end-->
+  </section>
+
+
+//= template/_footer.html
 
    <script  src="js/menu-toggle.js"></script>   
+   <script  src="js/my-js-Slider.js"></script>
+   <script  src="js/my-smoothScroll.js"></script>
+   <script  src="js/main.js"></script>      
 
   <!--
-   <script  src="js/mySlider.js"></script>   
+ 
    <script  src="js/logo-animation.js"></script>   
    <script  src="js/icon-animation.js"></script> 
 
    <script  src="js/myGallery.js"></script> 
        -->
+       
+       
+<!--
      <script>
       var map;
       function initMap() {
@@ -103,6 +130,11 @@
     <script src="https://maps.googleapis.com/maps/api/js?key= &callback=initMap"
     async defer></script>
   
+      
+-->
+    <div class="global-overlay noActive"></div>  
+      
+      
        
 </body>
 </html>

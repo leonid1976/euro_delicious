@@ -78,6 +78,7 @@
 
         // обработчик события click для кнопок "назад" и "вперед"
         var _controlClick = function (e) {
+          clearInterval(interval);
           var direction = this.classList.contains('myslider__control_right') ? 'right' : 'left';
           e.preventDefault();
           _transformItem(direction);
@@ -105,6 +106,8 @@
       }
     }());
 
-    var slider = multiItemSlider('.myslider')
+    var slider = multiItemSlider('.myslider');
+  
+    let interval = setInterval(slider.right, 2000);
     
     })();

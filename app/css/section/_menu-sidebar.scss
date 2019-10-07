@@ -1,0 +1,165 @@
+/*======================<_menu-sidebar>==================*/
+
+.our-menu {
+  width: 350px;
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: $ff-main-b;
+  text-align: left;
+  box-shadow: $ss-block;
+  height: 552px;
+}
+
+.our-menu__heading {
+  padding-left: 36px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid $cc-head;  
+}
+
+.menu__items {
+  width: 348px;
+  padding: 8px 6px 8px 36px;
+  margin-bottom: 24px;
+}
+
+.our-menu .menu__item {
+  display: inline-block;
+  margin-right: 26px;
+  padding-bottom: 12px;
+
+}
+
+.our-menu .menu__item a:hover {
+   color: $cc-text-accent;  
+} 
+
+.special-offer {
+  padding-left: 36px;  
+}
+
+.special-offer__heading {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.our-menu .cmn-toggle-switch {
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .our-menu {
+    width: 280px;
+  }
+  
+  .menu__items {
+    width: 260px;
+    margin-bottom: 8px;
+  }
+  
+  .our-menu .menu__item:last-child {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 1060px) {
+
+.our-menu {
+    height: 78px;
+    width: 80px;
+    padding: 0;
+  }
+  
+  .our-menu h3 {
+    display: none;
+  }
+  
+  .our-menu .shop__arrow-down {
+    display: none;
+  }
+  
+  .special-offer {
+    display: none;
+  }
+  
+  .our-menu .cmn-toggle-switch {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .our-menu .cmn-toggle-switch span {
+    height: auto; 
+    font-size: 10px;
+    background-color: transparent;
+    text-indent: -4px;
+
+  }
+  
+  .our-menu .cmn-toggle-switch span::before {
+  top: -12px;
+}
+ 
+  .our-menu .cmn-toggle-switch span::after {
+  bottom: -12px;
+}  
+  
+.our-menu .cmn-toggle-switch__htx.active span {
+    color: transparent;
+  }
+  
+.our-menu .cmn-toggle-switch__htx.active span::before {
+  top: 4px;
+}
+ 
+.our-menu .cmn-toggle-switch__htx.active span::after {
+  bottom: 4px;
+}  
+    
+  
+  
+  .menu__items {
+    display: none;
+  } 
+  
+
+  
+  .our-menu.opened h3{
+    display: block;
+  }
+
+  
+  .our-menu.opened {
+    height: 602px;
+    width: 260px;
+    z-index: 3
+  }
+   
+  .our-menu.opened .menu__items {
+    display: block;
+  }
+
+    .our-menu.opened .special-offer {
+    display: block;
+  }  
+  
+}  
+  
+
+
+@media screen and (max-width: 410px) {
+  .myslider__control_left,
+  .myslider__control_right {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+  
+}
+
+
+/*======================<_menu-sidebar end>==================*/

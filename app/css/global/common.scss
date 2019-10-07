@@ -11,6 +11,10 @@ html {
     scrollbar-color: #ce9e55 #faf6f0;
 }
 
+a {
+    color: $cc-text;
+}
+
 ::-webkit-scrollbar {
   background-color: #faf6f0;
     width: 12px;
@@ -33,10 +37,25 @@ html {
 }
 
 
+footer {
+  position: relative;
+}
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
+
+.global-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+}
+
   
 
 .container {
@@ -53,11 +72,11 @@ section {
   position: relative;
 }
 
-//.content {
-//  padding: 0;
-//  display: flex;
-//  position: relative;
-//}
+.storefront__wrap, .menu__wrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 30px;
+}
 
 
 .btn {
@@ -93,11 +112,11 @@ h1 {
 
 h2 {
     font-family: $ff-main-b;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 0.119em;
     color: $cc-head; 
     text-align: left;
-    margin-bottom: 56px;
+    margin-bottom: 48px;
     text-transform: uppercase;
     line-height: 1.5em;
 }
@@ -109,6 +128,7 @@ h3 {
   text-align: left;
   letter-spacing: 0.119em;
   color: $cc-head;
+  margin-bottom: 64px;
 }
 
 h4 {
@@ -146,111 +166,82 @@ h4 {
   display: none;
 }
 
-//----------------form----------------------------------//
-
-input, select, textarea {
-  width: 480px;
-  border: $bb-block;
-  outline: 0px;
-  height: 50px; 
-  padding: 16px;
-  background-color: #ffffff;
-  overflow-y: hidden;    
-}
-
-input.submit {
-  display: inline-block;
-  font-family: $ff-main;
-  font-size: 16px;
-  letter-spacing: 0.119em;
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid $cc-text !important;
-  color: $cc-text;   
-      &:hover, &:active {
-      background-color: #ffffff;
-      color: #ffffff;
-    }  
-}
 
 
 
-@media screen and (max-width: 1120px) {
-  .page-container {
-
-  }
-}
-
-@media screen and (max-width: 992px) {
-  h1 { 
-
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
   }
   
-  .page-container {
-
+  .storefront__wrap, .menu__wrap {
+    display: grid;
+    grid-template-columns: 280px auto;
+    grid-column-gap: 20px;
   }  
-  
 }
 
-
-@media screen and (max-width: 768px) {
-
-    h1 { 
-
+@media screen and (max-width: 1060px) {
+  .storefront__wrap, .menu__wrap  {
+    grid-template-columns: 100px auto;
+    grid-column-gap: 0px;
   }
   
-  .wrap {
+//  .menu__wrap {
+//    grid-template-columns: 1fr;
+//    grid-column-gap: 0px;
+//  }  
+}
+
+
+
+@media screen and (max-width: 585px) {
+  
+  .storefront__wrap, .menu__wrap  {
+    grid-template-columns: 160px auto;
+  }  
+
+  
+  
+  .cmn-toggle-switch {
+    width: 80px;
+    height: 70px;  
 
   }
-}
 
-@media screen and (max-width: 580px) {
-  h1 { 
-
-  }    
-  
-  h2 {
-        font-size: 36px;
+  .cmn-toggle-switch span {
+    height: 3px;
   }
-  
-  
-.cmn-toggle-switch {
-  width: 80px;
-  height: 70px;  
-  
-}
-  
-.cmn-toggle-switch span {
-  height: 3px;
-}
-  
-.cmn-toggle-switch span::before,
-.cmn-toggle-switch span::after {
-  height: 3px;
-}
- 
-.cmn-toggle-switch span::before {
-  top: -14px;
-}
- 
-.cmn-toggle-switch span::after {
-  bottom: -14px;
-}  
 
-}
-
-@media screen and (max-height: 500px) {
-        
-  .page-container {  
-
+  .cmn-toggle-switch span::before,
+  .cmn-toggle-switch span::after {
+    height: 3px;
   }
-      
-    h2 {
 
+  .cmn-toggle-switch span::before {
+    top: -14px;
+  }
+
+  .cmn-toggle-switch span::after {
+    bottom: -14px;
+  }  
+
+}
+
+@media screen and (max-width: 445px) { 
+  .storefront__wrap, .menu__wrap {
+    grid-template-columns: 100px auto; 
+    grid-column-gap: 0px;    
   }
 }
 
-
+@media screen and (max-width: 380px) {
+  
+  .storefront__wrap, .menu__wrap {
+    grid-template-columns: 50px auto;   
+  }
+}
 
 
 

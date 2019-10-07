@@ -1,36 +1,73 @@
-(function homeFilter() {
-  var wrap = document.querySelector(".homes__wrap");
-  var form = document.getElementById("filter");
-  if(form) {
-    form.addEventListener('submit',  sendRequest);  
-    var ajaxUrl = window.wp_data.ajax_url; 
-  }
+  document.addEventListener('DOMContentLoaded', function() {
 
-  
-  function sendRequest(event) {
-        var request = new XMLHttpRequest();
-        request.open("POST", ajaxUrl);    
-        event.preventDefault();
-        var formData = new FormData(form);
-        request.send(formData);  
-    
-        request.onload = function() {
-            if (request.status != 200) {
-              alert( 'Ошибка: ' + request.status);
-              return;
-            }
-            
-            var answer = request.response;
-            wrap.innerHTML = "";          
-            wrap.innerHTML = answer;
-            console.log(answer);
 
-        }
-    
-    };
-  
-    
-    startModal("This website is a part of porfolio. For non-commercial use");
-  
 
+
+(function ShowSecondMenu() {
+  let shopToggleButton = document.querySelector(".storefront .cmn-toggle-switch__htx");
+  
+  let menuToggleButton = document.querySelector(".menufront .cmn-toggle-switch__htx");
+  
+  
+  shopToggleButton.addEventListener("click", toggleMenu);
+  menuToggleButton.addEventListener("click", toggleMenu);
+
+
+
+  function toggleMenu(event) {
+    let target = this;
+
+    let overlayElement = document.querySelector(".global-overlay");
+    let bodyElement = document.body;
+    
+    function menuSwitchOn() {
+
+      target.classList.add("active");   //change button to cross
+      overlayElement.classList.remove("noActive");  //show overlay  
+      overlayElement.addEventListener("click", handleOverlay);
+      
+      bodyElement.classList.add("stop-scrolling"); // stop scrolling 
+      
+      target.parentNode.classList.add("opened");
+    }
+    
+    function menuSwithOff() {
+     
+      target.classList.remove("active");  //change button to normal 
+      overlayElement.removeEventListener("click", handleOverlay);      
+      overlayElement.classList.add("noActive");  //hide overlay 
+      bodyElement.classList.remove("stop-scrolling"); // stop scrolling  
+      
+      target.parentNode.classList.remove("opened");      
+    }
+
+    function handleOverlay() {
+        menuSwithOff();  
+    }
+
+    if(target.classList.contains("active")) {
+        menuSwithOff();
+
+    } else {
+        menuSwitchOn();
+    }
+  } 
 })();
+
+let arrow = document.querySelector(".header__arrow-down");  
+arrow.addEventListener('click', scrollPage);
+
+function scrollPage(event) {
+  event.preventDefault();
+  let target = this;
+
+ let id = target.getAttribute("href").slice(1);
+
+  smoothScroll(id);
+  
+}
+
+    
+//    startModal("This website is a part of porfolio. For non-commercial use");
+  
+}, false)

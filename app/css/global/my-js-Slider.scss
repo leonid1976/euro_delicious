@@ -42,7 +42,7 @@
     width: 0;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
-    border-right: 25px solid $c-head;
+    border-right: 25px solid $cc-head;
   }
 
   .myslider__control_right {
@@ -51,7 +51,7 @@
     width: 0;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
-    border-left: 25px solid $c-head;  
+    border-left: 25px solid $cc-head;  
 
   }
 
@@ -117,14 +117,14 @@
   
     .myslider__control_left {
       left: 2px;
-      border-right: 25px solid $c-head; 
+      border-right: 25px solid $cc-head; 
       opacity: 0.5;
 
   }
   
     .myslider__control_right {
       right: 2px;
-      border-left: 25px solid $c-head;  
+      border-left: 25px solid $cc-head;  
       opacity: 0.5;
 
   }

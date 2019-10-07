@@ -10,19 +10,12 @@
 @import 'global/common';
 @import 'global/mixins';
 //@import 'global/myGallery';
-//@import 'global/my-js-Slider';
+@import 'global/my-js-Slider';
 //@import 'global/myModalWindow';
 @import 'section/_header';
-@import 'section/_shop';
-@import 'section/_sidebar_shop';
-@import 'section/_menu';
-@import 'section/_sidebar_menu';
+@import 'section/_shop-content';
+@import 'section/_shop-sidebar';
+@import 'section/_menu-content';
+@import 'section/_menu-sidebar';
 @import 'section/_footer';
-
-
-//@import 'pages/about-us';
-//@import 'pages/technology';
-//@import 'pages/our-homes';
-//@import 'pages/gallery';
-//@import 'pages/single-page';
 

@@ -104,6 +104,9 @@
   text-align: right;
 }
 
+.account:hover .account__icon {
+  color: $cc-accent;
+}
 
 .header-bottom, .header-bottom .container {
   height: 95%;
@@ -196,9 +199,9 @@ h1 {
   z-index: -3;
   background-color: $cc-sec-back;
   width: 1920px;
-  height: 738px;
+  height: 708px;
   left: -939px;
-  bottom: -630px;
+  bottom: -600px;
 }
 
 
@@ -211,12 +214,10 @@ h1 {
   width: 30px;
   border-radius: 50%;
   border: 1px solid #f4d3a5;  
- // background-color: #f4d3a5;
   bottom: 30px;
   font-size: 24px;
   text-align: center;
   &:hover {
-   // background-color: #f4d3a5; 
     color: $cc-accent;
   }
   
@@ -236,7 +237,7 @@ h1 {
   width: 80px;
   height: 70px;
   font-size: 0;
-  text-indent: -9999px;
+//  text-indent: -9999px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -405,10 +406,7 @@ h1 {
 }
 
 @media screen and (max-width: 1110px) {
-  .container {
-    width: 100%;
-    padding: 0 20px;
-  }
+
   
   .offer {
         background: rgba(0, 0, 0, .4);
@@ -690,7 +688,7 @@ h1 {
     bottom: 0px;
     left: 0px;
     right: 0px;
-     padding-top: 18%;
+     padding-top: 40%;
   }
   
   .header__phone {
@@ -703,6 +701,14 @@ h1 {
     display: none;
   }
 }
+
+
+@media screen and (max-height: 500px) {
+   .offer {
+     padding-top: 18%;
+  }
+}
+
 
 
 @media screen and (max-height: 400px) {
