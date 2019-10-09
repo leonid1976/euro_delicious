@@ -6,6 +6,16 @@
   z-index: 0;
 }
 
+.about-us .header  {
+  height: 640px;
+  margin-bottom: 80px;
+}
+
+.about-us .main-picture {
+  background-image: url('../img/about-us-picture2.jpg') !important;
+  height: 535px;
+}
+
 
 .header-top {
   position: relative;
@@ -121,6 +131,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  box-shadow: $ss-block;
   &::after {
     display: block;
     position: absolute;
@@ -130,8 +141,16 @@
     right: 0;
     content: '';
     background-color: rgba(0, 0, 0, .2);
-  }
-  
+  }  
+}
+
+.about-us .main-picture {
+    width: 1108px;
+    height: 535px;
+    left: 398px;
+      &::after {
+      background-color: rgba(0, 0, 0, .2);
+  }  
 }
 
 
@@ -148,9 +167,22 @@
   z-index: -1;
 }
 
+.about-us .offer {
+  top: 140px;
+  left: -398px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  padding-left: 68px;  
+}
+
 h1 {
   margin-bottom: 16px;
 }
+
+.about-us h1 {
+  margin-bottom: 0px;
+}
+
 
 .offer__heading-white {
   position: absolute;
@@ -168,6 +200,10 @@ h1 {
   margin: 0px;
 }
 
+.about-us .offer__heading-white {
+  display: none;
+} 
+
 .offer__subheading {
   font-family: $ff-main;
   font-size: 32px;
@@ -175,6 +211,10 @@ h1 {
   letter-spacing: 0.119em;
   color: $cc-head;
   text-align: left;
+}
+
+.about-us .offer__subheading {
+  display: none;
 }
 
 .header__adress, .header__phone {
@@ -190,8 +230,16 @@ h1 {
   left: -540px;
 }
 
+.about-us .header__adress {
+  display: none;
+}
+
 .header__phone {
   left: -110px;
+}
+
+.about-us .header__phone {
+  left: -394px;
 }
 
 .square {
@@ -199,11 +247,18 @@ h1 {
   z-index: -3;
   background-color: $cc-sec-back;
   width: 1920px;
-  height: 708px;
+  height: 600px;
   left: -939px;
   bottom: -600px;
 }
 
+.about-us .square {
+  display: none;
+//  left: -794px;
+//  top: 500px;  
+//  background-image: url("../img/about-us-bg.jpg");
+//  height: 1616px;  
+}  
 
 
 
@@ -221,6 +276,10 @@ h1 {
     color: $cc-accent;
   }
   
+}
+
+.about-us .header__arrow-down {
+  display: none;
 }
 
 
@@ -363,6 +422,9 @@ h1 {
   left: 205px;  
   }
   
+  .about-us .main-picture {
+  left: 190px;  
+  }  
   
   .offer {
     top: 210px;
@@ -371,6 +433,13 @@ h1 {
     width: 100%;    
     z-index: 2;
   }
+ 
+    .about-us .offer {
+      padding-left: 180px;
+      top: 160px;  
+      left: 0px;
+  }
+  
   
   .offer__heading-white {
     display: none;
@@ -387,22 +456,29 @@ h1 {
   }
   
 
-.header__adress {
-  left: -260px;
-  top: 100px;
-  text-align: right;
-  background-color: $cc-sec-back;
-  padding-top: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 260px;
-  z-index: -3;
-  height: 160px;
+  .header__adress {
+    left: -260px;
+    top: 100px;
+    text-align: right;
+    background-color: $cc-sec-back;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 260px;
+    z-index: -3;
+    height: 160px;
+  }
+
 }
 
-
-
-
+@media screen and (max-width: 1160px) {
+  .about-us .square {
+//    left: -794px;
+//    top: 500px;  
+//    background-image: url("../img/about-us-bg.jpg");
+//    height: 2590px;  
+    display: none;
+  }   
 }
 
 @media screen and (max-width: 1110px) {
@@ -415,6 +491,10 @@ h1 {
   h1 {
     font-size: 35px;
     margin-bottom: 10px;
+  }
+  
+  .about-us h1 {
+    font-size: 40px;
   }
   
   .offer__subheading {
@@ -496,6 +576,9 @@ h1 {
   
 }
 
+
+
+
 @media screen and (max-width: 992px) {
   .main-picture {
     position: relative;
@@ -503,8 +586,21 @@ h1 {
   }
 
   
+  .about-us .main-picture {
+      background-position: center;
+      width: 106%;
+      background-size: cover;
+      left: -20px;      
+  }
+  
+  
+  
   .offer {
     background: rgba(0, 0, 0, .4);
+  }
+  
+  .about-us .offer {
+    padding-left: 0px;
   }
   
   .offer__heading-white {
@@ -514,6 +610,11 @@ h1 {
   h1 {
      width: 400px;
   }
+  
+  .about-us h1 {
+    width: 100%;
+    text-align: center;
+  }  
   
   .header__adress {
     left: 0px;
@@ -552,13 +653,13 @@ h1 {
       display: none;
   }  
 
-  .header,  .header-bottom .container,  {
+  .header,  .header-bottom .container  {
     width: 100%;
     padding: 0;
   }
     .main-picture {
       left: 0px;  
-      width: 100%;
+      width: 100%;    
     }
   
   
@@ -569,6 +670,8 @@ h1 {
     width: 100%;    
     z-index: 2;
   }
+  
+  
   
   .offer__heading-white {
     display: none;
@@ -601,12 +704,22 @@ h1 {
   
   .offer {
     padding: 20px;
-    
   }
+  
+  .about-us .offer {
+    width: 100%;  
+  } 
+
   
   h1 {
     font-size: 32px;
   }
+  
+  .about-us h1 {
+    font-size: 32px;
+  }
+  
+  
   
   .offer__subheading {
     font-size: 26px;
@@ -706,6 +819,11 @@ h1 {
 @media screen and (max-height: 500px) {
    .offer {
      padding-top: 18%;
+  }
+  
+    .about-us .offer {
+      top: 0px;     
+      padding-top: 18%;      
   }
 }
 
