@@ -6,7 +6,7 @@
   z-index: 0;
 }
 
-.about-us .header  {
+.page .header  {
   height: 640px;
   margin-bottom: 80px;
 }
@@ -16,6 +16,14 @@
   height: 535px;
 }
 
+.gallery .main-picture {
+  background-image: url('../img/gallery-picture2.jpg') !important;
+  height: 535px;
+}
+
+.gallery h1 {
+  padding-left: 10px;
+}
 
 .header-top {
   position: relative;
@@ -144,7 +152,7 @@
   }  
 }
 
-.about-us .main-picture {
+.page .main-picture {
     width: 1108px;
     height: 535px;
     left: 398px;
@@ -167,7 +175,7 @@
   z-index: -1;
 }
 
-.about-us .offer {
+.page .offer {
   top: 140px;
   left: -398px;
   padding-top: 56px;
@@ -179,7 +187,7 @@ h1 {
   margin-bottom: 16px;
 }
 
-.about-us h1 {
+.page h1 {
   margin-bottom: 0px;
 }
 
@@ -200,7 +208,7 @@ h1 {
   margin: 0px;
 }
 
-.about-us .offer__heading-white {
+.page .offer__heading-white {
   display: none;
 } 
 
@@ -213,7 +221,7 @@ h1 {
   text-align: left;
 }
 
-.about-us .offer__subheading {
+.page .offer__subheading {
   display: none;
 }
 
@@ -230,7 +238,7 @@ h1 {
   left: -540px;
 }
 
-.about-us .header__adress {
+.page .header__adress {
   display: none;
 }
 
@@ -238,7 +246,7 @@ h1 {
   left: -110px;
 }
 
-.about-us .header__phone {
+.page .header__phone {
   left: -394px;
 }
 
@@ -252,7 +260,7 @@ h1 {
   bottom: -600px;
 }
 
-.about-us .square {
+.page .square {
   display: none;
 //  left: -794px;
 //  top: 500px;  
@@ -278,7 +286,7 @@ h1 {
   
 }
 
-.about-us .header__arrow-down {
+.page .header__arrow-down {
   display: none;
 }
 
@@ -422,7 +430,7 @@ h1 {
   left: 205px;  
   }
   
-  .about-us .main-picture {
+  .page .main-picture {
   left: 190px;  
   }  
   
@@ -434,7 +442,7 @@ h1 {
     z-index: 2;
   }
  
-    .about-us .offer {
+    .page .offer {
       padding-left: 180px;
       top: 160px;  
       left: 0px;
@@ -472,7 +480,7 @@ h1 {
 }
 
 @media screen and (max-width: 1160px) {
-  .about-us .square {
+  .page .square {
 //    left: -794px;
 //    top: 500px;  
 //    background-image: url("../img/about-us-bg.jpg");
@@ -493,7 +501,7 @@ h1 {
     margin-bottom: 10px;
   }
   
-  .about-us h1 {
+  .page h1 {
     font-size: 40px;
   }
   
@@ -586,7 +594,7 @@ h1 {
   }
 
   
-  .about-us .main-picture {
+  .page .main-picture {
       background-position: center;
       width: 106%;
       background-size: cover;
@@ -599,7 +607,7 @@ h1 {
     background: rgba(0, 0, 0, .4);
   }
   
-  .about-us .offer {
+  .page .offer {
     padding-left: 0px;
   }
   
@@ -611,7 +619,7 @@ h1 {
      width: 400px;
   }
   
-  .about-us h1 {
+  .page h1 {
     width: 100%;
     text-align: center;
   }  
@@ -706,7 +714,7 @@ h1 {
     padding: 20px;
   }
   
-  .about-us .offer {
+  .page .offer {
     width: 100%;  
   } 
 
@@ -715,7 +723,7 @@ h1 {
     font-size: 32px;
   }
   
-  .about-us h1 {
+  .page h1 {
     font-size: 32px;
   }
   
