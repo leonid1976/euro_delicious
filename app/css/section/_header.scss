@@ -11,6 +11,14 @@
   margin-bottom: 80px;
 }
 
+.products .header, .menu-page .header {
+  background-image: url("../img/products-bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: 1920px 40px;
+  background-position: left bottom;  
+}
+
+
 .about-us .main-picture {
   background-image: url('../img/about-us-picture2.jpg') !important;
   height: 535px;
@@ -21,9 +29,17 @@
   height: 535px;
 }
 
-.gallery h1 {
-  padding-left: 10px;
+.products .main-picture {
+  background-image: url('../img/products-picture.jpg') !important;
+  height: 535px;
 }
+
+.menu-page .main-picture {
+  background-image: url('../img/menu-picture.jpg') !important;
+  height: 535px;
+}
+
+
 
 .header-top {
   position: relative;
@@ -183,6 +199,14 @@
   padding-left: 68px;  
 }
 
+.products .offer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  padding-left: 48px;  
+  top: 150px;  
+}
+
+
 h1 {
   margin-bottom: 16px;
 }
@@ -191,6 +215,13 @@ h1 {
   margin-bottom: 0px;
 }
 
+.gallery h1 {
+  padding-left: 10px;
+}
+
+.products h1 {
+  font-size: 32px;
+}
 
 .offer__heading-white {
   position: absolute;
@@ -255,9 +286,9 @@ h1 {
   z-index: -3;
   background-color: $cc-sec-back;
   width: 1920px;
-  height: 600px;
+  height: 660px;
   left: -939px;
-  bottom: -600px;
+  bottom: -566px;
 }
 
 .page .square {
@@ -438,7 +469,7 @@ h1 {
     top: 210px;
     left: 0px;
     background: rgba(0, 0, 0, .3);
-    width: 100%;    
+    width: 98.5%;    
     z-index: 2;
   }
  
@@ -678,6 +709,7 @@ h1 {
     width: 100%;    
     z-index: 2;
   }
+
   
   
   
@@ -703,6 +735,8 @@ h1 {
 @media screen and (max-width: 580px) {
   .header-top .container {
     width: 100%;
+    padding-left: 0px;
+    padding-right: 20px;
   }
   
   .main-picture {
@@ -714,9 +748,7 @@ h1 {
     padding: 20px;
   }
   
-  .page .offer {
-    width: 100%;  
-  } 
+
 
   
   h1 {
@@ -725,6 +757,9 @@ h1 {
   
   .page h1 {
     font-size: 32px;
+    width: 100%;
+    padding-left: 5%;
+
   }
   
   
@@ -751,15 +786,27 @@ h1 {
 
 @media screen and (max-width: 580px) {
   h1 {
-    width: 360px; 
+    width: 360px;
   }
   
   .account {
     margin-left: 40px;
-  }    
+  }   
+  
+    .page h1 {
+      padding-left: 10%;
+  }
 }
 
 @media screen and (max-width: 380px) {
+  
+  .page .main-picture {
+    height: 90vh;
+  }
+  
+  .page .header {
+    margin-bottom: 27.5vh;
+  }
 
   h1 {
     font-size: 28px; 
@@ -772,7 +819,16 @@ h1 {
   
   .account {
     margin-left: 15px;
-  }    
+  } 
+  
+  .page .offer {
+    top: 26%;
+  }
+  
+    .page h1 {
+      padding-left: 11%;
+  }  
+  
 }
 
 
@@ -829,7 +885,7 @@ h1 {
      padding-top: 18%;
   }
   
-    .about-us .offer {
+    .page .offer {
       top: 0px;     
       padding-top: 18%;      
   }

@@ -32,7 +32,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -600px;
   background-color: rgba(0, 0, 0, .85);
 }
 
@@ -52,7 +52,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .9);
     z-index: 2;
 }
 
@@ -72,7 +72,7 @@ section {
   position: relative;
 }
 
-.storefront__wrap, .menu__wrap {
+.storefront__wrap, .menu__wrap, .products__wrap, .deals__wrap {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 30px;
@@ -175,7 +175,7 @@ h4 {
     padding: 0 20px;
   }
   
-  .storefront__wrap, .menu__wrap {
+  .storefront__wrap, .menu__wrap,  .products__wrap, .deals__wrap {
     display: grid;
     grid-template-columns: 280px auto;
     grid-column-gap: 20px;
@@ -183,22 +183,19 @@ h4 {
 }
 
 @media screen and (max-width: 1060px) {
-  .storefront__wrap, .menu__wrap  {
+  .storefront__wrap, .menu__wrap, .products__wrap, .deals__wrap  {
     grid-template-columns: 100px auto;
     grid-column-gap: 0px;
   }
   
-//  .menu__wrap {
-//    grid-template-columns: 1fr;
-//    grid-column-gap: 0px;
-//  }  
+
 }
 
 
 
 @media screen and (max-width: 585px) {
   
-  .storefront__wrap, .menu__wrap  {
+  .storefront__wrap, .menu__wrap, .products__wrap, .deals__wrap  {
     grid-template-columns: 160px auto;
   }  
 
@@ -230,7 +227,7 @@ h4 {
 }
 
 @media screen and (max-width: 445px) { 
-  .storefront__wrap, .menu__wrap {
+  .storefront__wrap, .menu__wrap, .products__wrap, .deals__wrap {
     grid-template-columns: 100px auto; 
     grid-column-gap: 0px;    
   }
@@ -238,7 +235,7 @@ h4 {
 
 @media screen and (max-width: 380px) {
   
-  .storefront__wrap, .menu__wrap {
+  .storefront__wrap, .menu__wrap, .products__wrap, .deals__wrap {
     grid-template-columns: 50px auto;   
   }
 }

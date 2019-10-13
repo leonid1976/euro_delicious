@@ -6,11 +6,21 @@
 (function ShowSecondMenu() {
   let shopToggleButton = document.querySelector(".storefront .cmn-toggle-switch__htx");
   
-  let menuToggleButton = document.querySelector(".menufront .cmn-toggle-switch__htx");
+  let menuToggleButton = document.querySelector(".menufront .cmn-toggle-switch__htx");  
   
+  let productsToggleButton = document.querySelector(".products__content .cmn-toggle-switch__htx");
   
-  shopToggleButton.addEventListener("click", toggleMenu);
-  menuToggleButton.addEventListener("click", toggleMenu);
+  let deliveryToggleButton = document.querySelector(".deals .cmn-toggle-switch__htx");
+  
+  if (document.body.classList.contains("main-page")) {
+      shopToggleButton.addEventListener("click", toggleMenu);
+      menuToggleButton.addEventListener("click", toggleMenu);
+  } else {
+      productsToggleButton.addEventListener("click", toggleMenu);
+      deliveryToggleButton.addEventListener("click", toggleMenu);
+  } 
+  
+
 
 
 
@@ -26,7 +36,7 @@
       overlayElement.classList.remove("noActive");  //show overlay  
       overlayElement.addEventListener("click", handleOverlay);
       
-      bodyElement.classList.add("stop-scrolling"); // stop scrolling 
+   //   bodyElement.classList.add("stop-scrolling"); // stop scrolling 
       
       target.parentNode.classList.add("opened");
     }
@@ -36,7 +46,7 @@
       target.classList.remove("active");  //change button to normal 
       overlayElement.removeEventListener("click", handleOverlay);      
       overlayElement.classList.add("noActive");  //hide overlay 
-      bodyElement.classList.remove("stop-scrolling"); // stop scrolling  
+    //  bodyElement.classList.remove("stop-scrolling"); // stop scrolling  
       
       target.parentNode.classList.remove("opened");      
     }

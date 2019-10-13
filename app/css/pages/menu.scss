@@ -1,0 +1,241 @@
+/*======================<menu>==================*/
+
+.menu-page__content {
+ // height: 1644px;
+  background-color: $cc-sec-back;
+  padding-top: 90px;
+  margin-bottom: -100px;
+  top: -80px;
+}
+
+
+.courses, .bellow {
+  padding: 10px 0;
+}
+
+.courses.even .courses__heading {
+  text-align: right;
+}
+
+.courses__heading, .bellow__heading {
+  margin-bottom: 64px;
+}
+
+
+.courses__item {
+  display: grid;
+  grid-template-columns: 467px auto;
+  margin-bottom: 64px;
+  grid-column-gap: 50px;
+  justify-content: start;
+  grid-auto-flow: dense;
+}
+
+.courses.even .courses__item {
+  justify-content: end;
+}
+
+.courses__item_wrap {
+  text-align: left;
+  width: 410px;
+}
+
+.courses__item_heading {
+  margin-bottom: 32px;
+}
+
+.courses__item_price {
+  color: $cc-accent;
+  font-size: 20px;
+  font-family: $ff-main-b;
+}
+
+.courses__item_measure {
+  color: $cc-text;
+}
+
+.courses__picture, .bellow__picture {
+  box-shadow: $ss-block;
+}
+
+.courses__item_description {
+  margin-bottom: 10px;
+}
+
+.courses .courses__item .courses__item_heading {
+  padding-right: 40px;
+}
+
+.courses.even .courses__item courses__item_heading {
+  
+}
+
+.courses.even .courses__item .courses__item_wrap {
+  grid-column: 1/2;
+  text-align: right;
+  justify-self: end;
+}
+
+.courses.even .courses__item .courses__picture {
+  grid-column: 2/3;
+}
+
+.courses.even .courses__item.even {
+  justify-content: flex-start;
+}
+
+.courses.even .courses__item.even .courses__item_wrap {
+  grid-column: 2/3;
+  text-align: left;
+  justify-self: start;
+}
+
+.courses.even .courses__item.even .courses__picture {
+  grid-column: 1/2;
+}
+
+
+//.courses .courses__item .courses__item_wrap {
+//  grid-column: 1/2;
+//  text-align: right;
+//  justify-self: end;
+//}
+//
+//.courses .courses__item .courses__picture {
+//  grid-column: 2/3;
+//}
+
+.courses .courses__item.even {
+  justify-content: flex-end;
+}
+
+.courses .courses__item.even .courses__item_wrap {
+  grid-column: 1/2;
+  text-align: right;
+  justify-self: end;
+}
+
+.courses .courses__item.even .courses__picture {
+  grid-column: 2/3;
+}
+
+.bellow-courses {
+  margin-bottom: 72px;
+}
+
+.bellow__heading {
+  text-align: center;
+}
+
+.bellow__item {
+  display: grid;
+  grid-template-columns: 216px 448px 216px;
+  margin-bottom: 64px;
+  grid-column-gap: 50px;
+  justify-content: center;
+  grid-auto-flow: dense;  
+  text-align: left;
+  justify-items: center;
+}
+
+
+@media screen and (max-width: 1040px) { 
+  .bellow__item {
+    grid-template-columns: 216px 360px 216px;
+  }
+  
+  .bellow__picture {
+    width: 360px;
+  }
+  
+  .bellow__description-left, .bellow__description-right {
+    justify-self: start;
+  }
+}
+
+@media screen and (max-width: 970px) { 
+  .courses__item {
+  grid-template-columns: 360px auto;
+}
+
+  .courses__picture {
+    width: 360px;
+  }
+  
+  .courses__item_wrap {
+    width: 360px;
+  }
+  
+  .bellow__item {
+    grid-template-columns: 200px 360px 200px;
+  }
+}
+
+@media screen and (max-width: 900px) { 
+  .bellow__item {
+  grid-template-columns: 1fr;
+  grid-row-gap: 40px;  
+  }
+  
+  .bellow__description-left, .bellow__description-right {
+    text-align: center;
+    justify-self: center;    
+  }  
+  
+  .bellow__heading {
+    margin-bottom: 40px;
+  }  
+}
+
+@media screen and (max-width: 816px) {
+  .courses-item {
+    margin-bottom: 48px;
+  }
+  
+  .courses__heading, .courses.even .courses__heading {
+    text-align: center;
+  }
+  
+  .courses .courses__item, .courses .courses__item.even, .courses.even .courses__item, .courses.even .courses__item.even {
+    grid-template-columns: 1fr !important;
+    grid-row-gap: 40px;
+    justify-items: center !important; 
+
+  }
+
+.courses.even .courses__item .courses__item_wrap {
+  grid-column: 1/2;
+  justify-self: center;    
+  text-align: left;  
+}
+
+.courses.even .courses__item .courses__picture {
+  grid-column: 1/2;
+  justify-self: center;    
+}
+
+
+.courses.even .courses__item.even .courses__item_wrap {
+  grid-column: 1/2;
+  justify-self: center;
+  text-align: left;
+}
+
+.courses.even .courses__item.even .courses__picture {
+  grid-column: 1/2;
+  justify-self: center;  
+}  
+  
+.courses .courses__item .courses__item_heading {
+    margin-bottom: 24px;
+    text-align: center;
+  }    
+
+}
+
+@media screen and (max-width: 420px) {
+  .courses__item_wrap, .courses__picture, .bellow__picture {
+    width: 100%;
+}
+}
+/*======================<menu end>==================*/

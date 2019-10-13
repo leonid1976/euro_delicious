@@ -111,7 +111,7 @@
 .categories {
     height: 78px;
     width: 80px;
-    padding: 0px; 
+    padding: 0px;
   }
   
   .categories h3 {
@@ -167,7 +167,7 @@
     position: absolute;
     z-index: 20;
     top: 4px;
-    left: 4px;
+    left: 4px; 
   }
   
   .categories.opened h3{
@@ -181,6 +181,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
     position: absolute;
+    overflow-y: auto;  
   }
    
   .categories.opened .category__items {
