@@ -29,6 +29,12 @@
   height: 535px;
 }
 
+.contacts .main-picture {
+  background-image: url('../img/contacts-picture.jpg') !important;
+  height: 535px;
+}
+
+
 .products .main-picture {
   background-image: url('../img/products-picture.jpg') !important;
   height: 535px;
@@ -124,11 +130,9 @@
   right: -2px;
   font-size: 12px;
   font-weight: bold;
-//  color: #ffffff;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-//  background-color: $cc-accent;
   text-align: center;
   line-height: 1.4em; 
   
@@ -147,7 +151,6 @@
 }
 
 .main-picture {
- // height: 724px;
   height: 75vh;
   width: 1008px;
   position: absolute;
@@ -215,7 +218,7 @@ h1 {
   margin-bottom: 0px;
 }
 
-.gallery h1 {
+.gallery h1, .contacts h1 {
   padding-left: 10px;
 }
 
@@ -227,7 +230,6 @@ h1 {
   position: absolute;
   z-index: 2;
   color: #ffffff;
-//  top: 284px;
   top: 298px;
   left: 20px;
   font-family: $ff-head;
@@ -292,14 +294,16 @@ h1 {
 }
 
 .page .square {
-  display: none;
-//  left: -794px;
-//  top: 500px;  
-//  background-image: url("../img/about-us-bg.jpg");
-//  height: 1616px;  
+  display: none; 
 }  
 
-
+.contacts .square {
+  background-image: url("../img/gallery-bg2.jpg") !important;
+  height: 128px;
+  display: block;
+  bottom: -94px;
+  left: -812px;  
+}
 
 .header__arrow-down {
   display: inline-block;
@@ -457,6 +461,8 @@ h1 {
 
 @media screen and (max-width: 1250px) {
   
+  
+  
   .main-picture {
   left: 205px;  
   }
@@ -512,12 +518,12 @@ h1 {
 
 @media screen and (max-width: 1160px) {
   .page .square {
-//    left: -794px;
-//    top: 500px;  
-//    background-image: url("../img/about-us-bg.jpg");
-//    height: 2590px;  
     display: none;
-  }   
+  } 
+  
+  .contacts .square {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1110px) {
@@ -526,6 +532,8 @@ h1 {
   .offer {
         background: rgba(0, 0, 0, .4);
   }
+  
+  
   
   h1 {
     font-size: 35px;
@@ -854,6 +862,15 @@ h1 {
 }
 
 
+@media screen and (max-height: 670px) {
+  
+    .contacts .header,
+  .menu-page .header, 
+  .products .header {
+    margin-bottom: 80px;
+  }
+}
+
 @media screen and (max-height: 665px) {
   
   .main-picture {
@@ -877,7 +894,15 @@ h1 {
   .header__arrow-down {
     display: none;
   }
+  
+      .about-us .header,
+  .gallery .header {
+    margin-bottom: 80px;
+  }
+  
 }
+
+
 
 
 @media screen and (max-height: 500px) {

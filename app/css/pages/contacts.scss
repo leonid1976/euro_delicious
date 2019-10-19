@@ -1,0 +1,204 @@
+/*======================<contacts>==================*/
+.contacts__content {
+  height: auto;
+  padding-top: 60px;
+  background-image: url("../img/gallery-bg2.jpg");
+  background-repeat: repeat-y;
+  top: 0px;
+  text-align: left;
+  }
+
+
+.location__wrap,
+.communication__wrap {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-column-gap: 65px;
+  }
+
+#map {
+    width:  763px;
+    height: 512px;  
+    box-shadow: $ss-block;
+}
+
+.location__wrap {
+  grid-template-columns: 8fr 3fr;
+}
+
+.communication__wrap {
+  grid-template-columns: 5fr 7fr;  
+}
+
+.location__wrap {
+  margin-bottom: 64px;
+}
+
+.details__item {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.details__icon {
+  margin-top: 5px;
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.details__heading {
+  margin-right: 8px;
+  font-family: $ff-main-b;
+}
+
+.details__houres .details__heading {
+  margin-bottom: 6px;
+  display: block;
+}
+
+.details__houres tr td:last-child {
+  padding-left: 10px;
+}
+
+.sibscribe__content {
+  margin-bottom: 40px;
+}
+
+.sibscribe__heading {
+  margin-bottom: 16px;
+}
+
+.sibscribe__form {
+  display: flex;
+  height: 40px;
+}
+
+.sibscribe__field {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #150c02;
+  border-radius: 2px 0px 0px 2px;
+  margin-right: 0;
+  outline: none;
+  text-align: left;
+  background-color: #ffffff;
+  overflow-y: hidden; 
+  padding-left: 8px;
+}
+
+
+#subscribe__submit {
+  width: 84px;
+  height: 40px;
+  background-color: $cc-sec-back;
+  border-radius: 0px 2px 2px 0px;
+  border: 1px solid $cc-text; 
+  margin-left: -6px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.form__field {
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.form__field label {
+  padding-top: 8px;
+  width: 130px;
+}
+
+.form__field input, .form__field textarea {
+  width: 100%;
+  height: 48px;
+  border: none;  
+  border-radius: 2px;
+  margin-right: 0;
+  outline: none;
+  text-align: left;
+  background-color: #ffffff;
+  overflow-y: hidden;
+  padding-left: 10px;
+  transition: all .3s;
+  &:hover {
+    box-shadow: $ss-block;
+  }  
+}
+
+.form__field textarea {
+  height: 152px;
+  padding-top: 8px;
+}
+
+#contact-form .submit {
+  text-align: center;
+  letter-spacing: 0.119em;
+  font-family: $ff-main-b;
+  border: 1px solid #150c02;
+  &:hover {
+    box-shadow: none;
+    background-color: $cc-sec-back;
+    cursor: pointer;
+  }   
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .contacts__content .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .location__wrap {
+    grid-template-columns: 7fr 5fr;
+  } 
+  
+  #map {
+      width:  auto;
+      height: auto;
+  }    
+  
+  #map img {
+      width: 100%;
+  }  
+}
+
+@media screen and (max-width: 815px) {  
+  .location__wrap {
+    grid-template-columns: 7fr 5fr;
+    grid-column-gap: 30px
+  } 
+}
+
+@media screen and (max-width: 780px) {  
+  .location__wrap,
+  .communication__wrap {
+      grid-template-columns: 1fr;
+      grid-row-gap: 40px;  
+    }
+  .communication__sibscribe {
+    grid-row: 2/3;
+  }
+  
+  #contact-form {
+    grid-row: 1/2;
+  }
+   
+  } 
+  
+
+@media screen and (max-width: 420px) {  
+   .contacts__content .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  } 
+}
+
+@media screen and (max-width: 360px) { 
+ .form__field label {
+    display: none;
+} 
+}
+
+
+/*======================<contacts end>==================*/

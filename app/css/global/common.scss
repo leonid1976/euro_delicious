@@ -150,7 +150,7 @@ h4 {
 .link, 
 .read-more {
   color: $cc-link;
-  font-family: $ff-main;
+  //font-family: $ff-main;
   cursor: pointer;
 }
 
@@ -166,6 +166,9 @@ h4 {
   display: none;
 }
 
+.mirror-symbol {
+  @include mirror-symbol();
+}
 
 
 
