@@ -11,6 +11,11 @@
   margin-bottom: 80px;
 }
 
+.single-product .header {
+    height: 96px;
+  margin-bottom: 0px;
+}
+
 .products .header, .menu-page .header {
   background-image: url("../img/products-bg2.jpg");
   background-repeat: no-repeat;
@@ -142,8 +147,13 @@
   text-align: right;
 }
 
+
 .account:hover .account__icon {
   color: $cc-accent;
+}
+
+.single-product .header-bottom {
+  display: none !important;
 }
 
 .header-bottom, .header-bottom .container {
@@ -869,6 +879,8 @@ h1 {
   .products .header {
     margin-bottom: 80px;
   }
+  
+
 }
 
 @media screen and (max-height: 665px) {
@@ -879,7 +891,6 @@ h1 {
   
    .offer {
     top: 0px;
-    bottom: 0px;
     left: 0px;
     right: 0px;
      padding-top: 40%;
@@ -900,6 +911,7 @@ h1 {
     margin-bottom: 80px;
   }
   
+
 }
 
 

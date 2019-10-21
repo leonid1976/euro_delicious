@@ -36,7 +36,9 @@
   color: #353534;
 }
 @media screen and (max-width: 1200px) {
-
+  .footer .container {
+    padding: 0 30px;
+  }
 }
 
 @media screen and (max-width: 580px) {

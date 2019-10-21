@@ -15,7 +15,7 @@
 .product-item {
   position: relative;
   width: 229px;
-  height: 352px;
+  height: 369px;
   background: #ffffff;
   position: relative;
   text-align: center;
@@ -70,7 +70,7 @@
 .product__price {
   font-family: $ff-main-b;
   @include   centerer-x();
-  bottom: 30px;
+  bottom: 72px;
   
 }
 
@@ -78,6 +78,36 @@
   font-family: $ff-main-b;
   font-size: 12px;
 }
+
+.product__quantity {
+  position: absolute;
+  bottom: 32px;
+  left: 10px;
+  font-size: 16px;
+}
+
+.product__quantity .quantity__change {
+  font-size: 19px;
+  width: 18px;
+}
+
+.product__quantity .quantity__change:last-child {
+  font-size: 16px;
+}
+
+.product__cta {
+  position: absolute;
+  bottom: 32px;
+  right: 10px;
+  font-size: 14px;
+  border: none;
+  padding: 4px;
+}
+
+.product__cta:hover .product__icon-cart {
+  color: $cc-accent;
+}
+
 
 .shop-content .square {
   bottom: -80px;
